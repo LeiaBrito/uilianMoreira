@@ -1,0 +1,295 @@
+body {
+    padding: 0;
+    margin: 0;
+    }
+.nav1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.navegar{
+    position: absolute;
+    left: 40%;
+    transform: translateX(-50%);
+}
+.navegar >ul {
+  
+     align-items: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+   border-style: solid;
+   border-width: 2px ;
+   border-top: 0px;
+   border-color: rgba(22, 87, 151, 0.537);
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+  
+    padding: 0; }
+
+
+.naveList > a {
+        text-decoration: none;
+       
+    }
+    
+.naveList {
+    
+     list-style: none;
+    margin: 8px;
+}
+
+.navegar > ul > li >a:hover {
+    color:rgba(250, 211, 83, 0.871);
+}
+
+
+
+nav > h3 {
+  
+   
+  
+    margin: 15px;}
+
+#dropMenu { 
+    transform: scale(1.0);
+}
+
+.butt{  
+    transform: scale(0.5);
+   position: relative;
+  
+  box-shadow: 9px 9px 10px rgba(0, 0, 0, 0.5);
+      border-style: none;
+       background:none;
+       display: none;
+    }
+
+     .mobMenu{ 
+        position: absolute;
+        text-align: justify;
+        display: none;
+        left: 0;
+    }
+    .mobMenu > ul > li > a:hover {
+        border-bottom: 2px solid black;
+    }
+    
+    .mobMenu > ul{
+padding: 0px;
+    } 
+
+@media screen and (max-width:700px) {
+    .navegar{ display: none;  margin: auto;}
+.animação-ba{display: none;}
+      .banner{display: flex; flex-direction: column;}
+    
+.butt{ display: inline-block;}
+.sobre{top: 10vh;}
+ .exibir{ display: inline-block;}
+
+}    
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Todo o CSS acima é referente ao header e nav, tudo já responsivo. */
+.No-banner{
+   
+    text-align: center;
+    font-size: max(66px, 7vw);
+    
+    font-family: 'Dancing Script', 'cursive';
+    margin: 0;
+    
+    background: linear-gradient(to right, #1906f096, #00ff8c4d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+   
+}
+.sub-banner{
+    font-size: max(20px, 1vw);
+    margin: 0;
+    background: linear-gradient(to right, #1906f096, #00ff8c4d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+}
+.banne-B{
+          /*<!-- <<Uma parte boa é que ao diminuir a altura desse banner, você consertou o problema do menu lateral." não mexa aqui -->*/   
+display: flex;
+
+    flex-direction: column;
+}
+.banne-A{
+    position: relative;
+    top :15vh;     
+    display: flex;
+    justify-content:center;
+    
+}
+
+/* <!-- <<<<<<<<<<<<<<<<<<<<<<<<o css acima^^^^ é referente ao banner  e animação do sofá --> */
+
+
+.sobre{
+
+   width: 100%;
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+   
+    margin-top: 50vh;
+      
+}
+
+
+.texto{
+    width: 300px;
+    font-size: max(10px, 13px);
+    
+} 
+
+.profissional{
+    width: 300px;
+    height: 350px;
+    background-image: url("imagens/IMG-20240210-WA0034.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-right: 20px;
+    border-radius: 20px;
+    
+}
+
+
+@media screen and (max-width:800px) {
+    .sobre{
+        margin-top:65vh;
+        box-sizing: border-box;
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+    .profissional{
+   
+        margin-right: unset;
+    }
+   
+
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<sobre */
+
+.carousel-inner{
+    height: 30em;
+    
+}
+
+.fundo{
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px; height: 500px;
+}
+.carousel-control-next-icon{ background-color: rgba(128, 128, 128, 0.589); 
+padding: 25px;
+border-radius: 50px;
+}
+.carousel-control-prev-icon{ background-color: rgba(128, 128, 128, 0.589); 
+    padding: 25px;
+    border-radius: 50px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>parte acima é referente ao carrousel de imagens>>>>>>>>>>> */
+
+.maisExemplos{
+    display: flex;
+    justify-content: center;
+
+margin-top: 10vh;
+
+}
+
+
+
+.mais{
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 2px;
+    margin: 0;
+}
+.imagemIndicativa{
+    width: 300px;
+    height: 300px;
+    background-image: url("./imagens/mulher-de-negocios-feliz-apontando-para-copyspace.jpg");
+    background-size:cover;
+    background-position: 66% 50%;
+    background-repeat: no-repeat;
+}
+.imagemIndicativaParagrafo{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:1011px) {
+    .imagemIndicativa{display: none;}
+    .maisExemplos > section{
+        width: 300px;
+    }
+    
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+.imagemIcon{
+
+    width: 50px;
+     height: 50px;
+
+background-size: cover;
+ background-repeat: no-repeat;
+}
+
+.lin{
+    
+    color:black ;
+}
+.lin:hover{ color:rgba(250, 211, 83, 0.871);}
+
+.creditos{
+    display: flex;
+    align-items: end;
+  align-content: space-around;
+}
+.creditos > .subCreditos > p,.creditos > .subCreditos> p >a{
+    font-size:xx-small;
+    color:white;
+    margin: 0;
+   
+}
+
+.subCreditos{
+margin: 10px;
+}
+
+.rodaP{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 20px;
+    
+    background-position: bottom;
+    background-image: url("./imagens/roda/9496304.png");
+    
+
+}

@@ -1,0 +1,1 @@
+function mostrar(){let mob=document.querySelector('.mobMenu');if(mob.classList.contains('exibir')){mob.classList.remove('exibir')}else{mob.classList.add('exibir')}}
